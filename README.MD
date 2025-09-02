@@ -59,8 +59,8 @@ API предоставляет следующие возможности:
 
 ```bash
 # Клонируем репозиторий
-git clone <URL_REPO>
-cd <project-folder>
+git clone <https://github.com/Nersik199/effective-user-service.git>
+cd <effective-user-service>
 
 # Устанавливаем зависимости
 yarn install
