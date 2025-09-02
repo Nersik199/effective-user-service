@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import User from '../models/users';
-import { UserStatus } from '@/models/interfaces/user.interface';
+import { UserStatus } from '../models/interfaces/user.interface';
 
 export default {
 	registerUser: async (req: Request, res: Response): Promise<Response> => {

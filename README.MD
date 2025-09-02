@@ -59,14 +59,33 @@ API предоставляет следующие возможности:
 
 ```bash
 # Клонируем репозиторий
-git clone <https://github.com/Nersik199/effective-user-service.git>
-cd <effective-user-service>
+git clone https://github.com/Nersik199/effective-user-service.git
+cd effective-user-service
 
 # Устанавливаем зависимости
 yarn install
 
-# Запуск сервера
-yarn dev
+# Запуск сервера в dev-режиме
+yarn start:dev
+
+# Сборка проекта
+yarn build
+
+# Запуск собранного проекта
+yarn start
+
+```
+
+## Скрипты проекта
+
+```
+В `package.json` определены следующие скрипты:
+
+| Скрипт        | Описание                                     |
+| ------------- | ------------------------------------------- |
+| `yarn start:dev` | Запуск сервера в режиме разработки (с авто-перезагрузкой) |
+| `yarn build`     | Сборка TypeScript в JavaScript (папка `dist`) |
+| `yarn start`     | Запуск уже собранного проекта из `dist` |
 ```
 
 ## Создать базу данных:
